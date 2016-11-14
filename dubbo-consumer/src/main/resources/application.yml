@@ -1,0 +1,63 @@
+spring:
+#  datasource:
+#    poolName: framework-uc
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driverClassName: com.mysql.jdbc.Driver
+#    #url: jdbc:mysql://192.168.0.217:8066/TESTDB00?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+#    #username: admin
+#    #password: admin
+#    url: jdbc:mysql://192.168.0.244:8066/cmp_uc_db?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+#    username: cmp_uc_oper
+#    password: mycat
+#    autoCommit: false
+#    initialSize: 10 #配置初始化大小、最小、最大
+#    minIdle: 10
+#    maxActive: 50
+#    maxWait: 60000 #配置获取连接等待超时的时间
+#    timeBetweenEvictionRunsMillis: 60000 #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+#    minEvictableIdleTimeMillis: 300000 #配置一个连接在池中最小生存的时间，单位是毫秒
+#    validationQuery: select 1
+#    testWhileIdle: true
+#    testOnBorrow: true
+#    testOnReturn: true
+#    connectionInitSql: select 1
+#    poolPreparedStatements: true
+#
+#mybatis:
+#  configLocation: classpath:/mybatis-config.xml
+#  mapperLocations: classpath*:com/cifmedia/framework/uc/core/mapper/*.xml
+#  keyGenMode: 1 #0： 数据库自增， 1：Mycat 序列自增， 默认0
+
+server:
+  port: 8082
+
+#dubbo:
+#  registry:
+#    #address: zookeeper://192.168.0.196:10060?backup=192.168.0.196:10050,192.168.0.219:10050
+#    address: zookeeper://192.168.163.60:2581?backup=192.168.163.61:2581,192.168.163.62:2581
+#  protocol:
+#    rest:
+#      port: 8881
+#      contextpath: user-service
+#
+#cache:
+#  printData: false # 使用cache时是否输出日志数据 默认false第一个
+#  redis:
+#    #hostname: 192.168.0.196
+#    hostname: 192.168.163.60
+#    port: 19000
+#    password:
+#
+#    timeout: 3000 # 读取超时 毫秒
+#    database: 0 #数据库index 默认0第一个
+#
+#    maxIdle: 30 #最大空闲连接数 默认30第一个
+#    maxActive: 50 #最大连接数, 默认50个
+#    maxWait: 10000 #获取连接时的最大等待毫秒数,如果超时就抛异常
+#    testOnBorrow: true #在获取连接的时候检查有效性, 默认true
+#  ehcache:
+#    flag: false # 本地一级缓存开关 默认false
+#    conf: /cache/ehcache.xml # 本地一级缓存配置文件，在flag=true才生效，默认目录下cache/ehcache.xml
+#batch:
+#  poolSize: 10
+      
